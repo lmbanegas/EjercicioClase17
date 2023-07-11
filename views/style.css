@@ -1,0 +1,317 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 360px) {
+    /*mobile*/
+    nav {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header {
+
+    }
+
+    
+
+}
+
+@media (min-width: 361px) {
+    /*tablet*/
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    #descripciones {
+        display: none
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .nab1 li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+    .nab2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding: 0;
+    }
+    .nab2 li {
+        margin-left: 10px;
+      }
+}
+
+@media (min-width: 769px) {
+    /*desktop*/
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    .container {
+        width: 25%;
+    }
+}
+
+
+
+.busquedalogo-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 10px;
+    width: 50%;
+
+}
+
+.buscar-cont form {
+    display: flex;
+    position: relative;
+
+}
+
+.buscar-cont input {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px;}
+
+
+.buscar-cont form button {
+    color: #666;
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    border: none;
+    background-color: transparent;
+    
+}
+
+
+
+.buscar li {
+    list-style: none;
+}
+
+
+.centrar-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.burger-menu {
+    border-radius: 3px;
+    color: white;
+    background-color: #1259c3;
+    padding: 5px 7px;
+    margin: 10px;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+}
+
+
+article {
+    margin: 15px;
+    background-color: #FFF;
+
+}
+
+.articulo {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.envio {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio-desc {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0px 10px 10px 0px;
+    align-items: center;
+}
+
+
+header {
+    background-color: #EAC926;
+    
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 22px 10px 40px;
+    color: #666;
+}
+
+
+.footerStyle {
+    margin: 10px;
+}
+
+#titulares {
+    font-size: 24px;
+    width: 100%;
+    color: #666;
+    padding: 15px;
+}
+
+#precio {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#descuentos {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+#truck {
+    color: #39b54a;
+    border: 4px solid;
+    border-radius: 100%;
+}
+
+#descripciones {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.icono {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+
+.textoFooter {
+    color: #666;
+}
+
+.textoFooter .p {
+    color: red;
+}
+
+
+
+/* -- CODIGO DE MÁS --
+
+
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+} 
+
+
+/* main article div {
+    background-color: white;
+    margin-bottom: 10px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+
+
+.envio {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+}
+
+
+
+main article div {
+    position: relative;
+    border: 2px;
+}
+
+main article div a i {
+    color: #39b54a
+} */
