@@ -66,8 +66,14 @@
         }
 
         #descripciones {
-            display: none
-        }
+            display: none;
+        }   
+
+        article:hover #descripciones {
+            display: block;
+          }
+
+
         .mobile {
             display: none;
         }
@@ -205,7 +211,10 @@
     article {
         margin: 15px;
         background-color: #FFF;
+    }
 
+    .container:hover {
+        background-color: red;
     }
 
     .articulo {
@@ -290,6 +299,8 @@
     }
 
 
+
+
     .icono {
         color: #1259c3;
         font-size: 2em;
@@ -304,61 +315,3 @@
     .textoFooter .p {
         color: red;
     }
-
-
-
-    /* -- CODIGO DE MÁS --
-
-
-
-    .busqueda {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-
-    .lista {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-    } 
-
-
-    /* main article div {
-        background-color: white;
-        margin-bottom: 10px;
-        margin: 15px;
-        box-sizing: border-box;
-    }
-
-
-
-    .envio {
-        display: inline-block;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        right: 20px;
-        top: -15px;
-        position: absolute;
-    }
-
-
-
-    main article div {
-        position: relative;
-        border: 2px;
-    }
-
-    main article div a i {
-        color: #39b54a
-    } */
