@@ -1,5 +1,5 @@
     /* Configuraciones generales */
-    
+
     body {
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
@@ -25,6 +25,7 @@
 
 
     @media (max-width: 360px) {
+
         /*mobile*/
         nav {
             display: none;
@@ -48,30 +49,30 @@
     @media (min-width: 361px) {
         /*tablet*/
 
-        main {
+        main:not(.login-register-page) {
             display: flex;
             flex-flow: row wrap;
         }
 
-        .buscar-cont {  
-        width: 10%;
+        .buscar-cont {
+            width: 10%;
         }
-        
+
         .container {
             width: 50%;
         }
 
-        article {
+        article:hover {
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
 
         #descripciones {
             display: none;
-        }   
+        }
 
         article:hover #descripciones {
             display: block;
-          }
+        }
 
 
         .mobile {
@@ -84,19 +85,19 @@
 
         }
 
-        .navbar-full ul{
+        .navbar-full ul {
             display: flex;
             list-style: none;
             padding: 10px;
             width: 100%;
         }
 
-        .navbar-full ul li{
+        .navbar-full ul li {
             padding: 0px 0px 5px 8px;
         }
 
 
-        .busquedalogo-contenedor{
+        .busquedalogo-contenedor {
             display: flex;
             justify-content: space-between;
         }
@@ -114,26 +115,24 @@
             width: 30%;
         }
 
-   }
+    }
 
-   /* Configuración PC */
+    /* Configuración PC */
 
     @media (min-width: 769px) {
-        /*desktop*/
 
-        main {
+        /*desktop*/
+        main:not(.login-register-page) {
             display: flex;
             flex-flow: row wrap;
-
         }
 
         .container {
             width: 25%;
         }
-    
     }
 
-/* Resto del sitio - Configuraciones */
+    /* Resto del sitio - Configuraciones */
 
 
 
@@ -175,10 +174,10 @@
         top: 25%;
         border: none;
         background-color: transparent;
-        
+
     }
 
-    .cuotas{
+    .cuotas {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -189,7 +188,7 @@
         list-style: none;
     }
 
-    .burguer{
+    .burguer {
         display: flex;
         justify-content: center;
     }
@@ -213,9 +212,6 @@
         background-color: #FFF;
     }
 
-    .container:hover {
-        background-color: red;
-    }
 
     .articulo {
         border-top: 1px solid #ebebeb;
@@ -238,6 +234,12 @@
         top: -15px;
         align-items: center;
         justify-content: center;
+        transition-timing-function: linear;
+        transition: transform 700ms;
+    }
+
+    .envio:hover {
+        transform: rotate(-90deg);
     }
 
     .precio-desc {
@@ -253,9 +255,12 @@
         width: 100%;
     }
 
-    footer {
-        margin: 0;
-        padding: 0;
+    .footer-cont {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        padding-top: 5px;
         background-color: white;
         text-align: center;
     }
@@ -287,25 +292,30 @@
         color: #39b54a;
     }
 
-    #truck {
+    /* #truck {
         color: #39b54a;
         border: 4px solid;
         border-radius: 100%;
+        transition-timing-function: linear;
+        transition: width 2s, height 2s, transform 2s;
     }
+
+    #truck:hover {
+        transform: rotate(-90deg);
+        background-color: blue;
+      } */
+
+
 
     #descripciones {
         font-size: 16px;
         color: #666;
     }
 
-
-
-
     .icono {
         color: #1259c3;
         font-size: 2em;
         margin-bottom: 10px;
-
     }
 
     .textoFooter {
@@ -314,4 +324,83 @@
 
     .textoFooter .p {
         color: red;
+    }
+
+
+    /* configs login */
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login form {
+        width: 70%;
+        padding: 10px;
+
+    }
+
+    .login form input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    /* configs register */
+
+    .selector {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 20px;
+
+
+    }
+
+    .selector input {
+            margin-left: 20%;
+
+    }
+
+    .titulo-register {
+        margin-left: 17%;
+        margin-bottom: 20px;
+
+    }
+
+    .intereses {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .intereses label {
+        margin-left: 20px;
+    }
+
+    .contenedor-intereses {
+        margin-left: 23%;
+    }
+
+
+    .botones-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
+    }
+
+    .botones-div input {
+        border: none;
+        margin: 20px;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #1259c3;
+        color: white;
+        width: 20%;
+
     }
