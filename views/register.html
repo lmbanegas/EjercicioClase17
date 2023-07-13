@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../app.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
 
@@ -20,7 +20,7 @@
         <div class="busquedalogo-contenedor">
 
             <div class="img-cont">
-                <img src="../public/images/logo-mercado-liebre.svg">
+                <img src="/images/logo-mercado-liebre.svg">
             </div>
 
 
@@ -60,8 +60,8 @@
 
             <div>
                 <ul>
-                    <li><a href="">Creá tu cuenta</a> <i class="fa-solid fa-address-card"></i></li>
-                    <li><a href="">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="register">Creá tu cuenta</a> <i class="fa-solid fa-address-card"></i></li>
+                    <li><a href="login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                     <li><a href="">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
                 </ul>
             </div>
@@ -76,16 +76,16 @@
 
         <div class="login">
             <form action="/register" method="POST">
-                <input type="text" name="nya" id="nya" placeholder="Nombre y apellido">
-                <input type="text" name="nombreusuario" id="nombreusario" placeholder="Nombre de usuario">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                
+                <input type="text" name="nya" id="nya" placeholder="Nombre y apellido" required minlength="1" maxlength="30" >
+                <input type="text" name="nombreusuario" id="nombreusario" placeholder="Nombre de usuario" required maxlength="10">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+
                 <label for="fechaDeNacimiento"> <b>Fecha de nacimiento</b> </label>
-                
-                <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" placeholder="Fecha de nacimiento">
+
+                <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" placeholder="Fecha de nacimiento" max="2005-07-13">
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
             </form>
-            
+
         </div>
 
         <div class="titulo-register">
@@ -93,50 +93,86 @@
         </div>
 
         <div class="selector">
-        <label for = "perfilDeUsuario"></label>
-        <input type="radio" name = "grupo" value="Comprador" > Comprador
-        <input type="radio" name = "grupo" value="Vendedor" > Vendedor
-    </div>
+            <label for="perfilDeUsuario"></label>
+            <input type="radio" name="grupo" value="Comprador"> Comprador
+            <input type="radio" name="grupo" value="Vendedor"> Vendedor
+        </div>
 
         <div class="titulo-register">
             <b>Intereses</b>
         </div>
 
         <div class="contenedor-intereses">
+            <form>
+                <div class="intereses">
+                    <input type="checkbox" id="electro" name="intereses" value="electro">
+                    <label for="electro">Electro</label>
+                </div>
+
+                <div class="intereses">
+                    <input type="checkbox" id="moda" name="intereses" value="moda">
+                    <label for="moda">Moda</label>
+                </div>
+
+                <div class="intereses">
+                    <input type="checkbox" id="hogar" name="intereses" value="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+
+                <div class="intereses">
+                    <input type="checkbox" id="jugueteria" name="intereses" value="jugueteria">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+
+                <div class="intereses">
+                    <input type="checkbox" id="vida_sana" name="intereses" value="vida_sana">
+                    <label for="vida_sana">Vida sana</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="titulo-register">
+            <br>
+            <b>Foto de usuario</b>
+        </div>
+
+        <div class="contenedor-intereses">
+            <form action="" method="post">
+                  <input type="file" name="">
+              </form>
+        </div>
+
+        <br>
+        <b class="titulo-register">Contraseña</b>
+
+        <div class="login">
         <form>
-            <div class="intereses">
-              <input type="checkbox" id="electro" name="intereses" value="electro">
-              <label for="electro">Electro</label>
+            <div>
+                <input type="password" name="password" id="password">
             </div>
-            
-            <div class="intereses">
-              <input type="checkbox" id="moda" name="intereses" value="moda">
-              <label for="moda">Moda</label>
-            </div>
-            
-            <div class="intereses">
-              <input type="checkbox" id="hogar" name="intereses" value="hogar">
-              <label for="hogar">Hogar</label>
-            </div>
-            
-            <div class="intereses">
-              <input type="checkbox" id="jugueteria" name="intereses" value="jugueteria">
-              <label for="jugueteria">Juguetería</label>
-            </div>
-            
-            <div class="intereses">
-              <input type="checkbox" id="vida_sana" name="intereses" value="vida_sana">
-              <label for="vida_sana">Vida sana</label>
-            </div>
-            
- 
-          </form>
-          
+        </form>
         </div>
-        <div class="botones-div">
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+
+        <b class="titulo-register">Confirmar contraseña</b>
+
+        <div class="login">
+            <form>
+                <div>
+                    <input type="password" name="password" id="password">
+                </div>
+            </form>
         </div>
+
+        <div class="contenedor-intereses">
+
+            <div class="botones-div">
+                <a href="/"><input type="submit" value="Enviar"></a>
+                <a href=""><input type="reset" value="Borrar"></a>
+            </div>
+        </div>
+
+
+
 
     </main>
 

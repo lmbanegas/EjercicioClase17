@@ -130,6 +130,25 @@
         .container {
             width: 25%;
         }
+
+        .footer-iconos {
+            display: flex;
+
+        }
+
+        .footer-iconos div {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+
+        .copy {
+            text-align: left;
+        }
     }
 
     /* Resto del sitio - Configuraciones */
@@ -255,7 +274,7 @@
         width: 100%;
     }
 
-    .footer-cont {
+    footer {
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -318,14 +337,14 @@
         margin-bottom: 10px;
     }
 
+    .icono:hover {
+        color: #051e82;
+    }
+
+
     .textoFooter {
         color: #666;
     }
-
-    .textoFooter .p {
-        color: red;
-    }
-
 
     /* configs login */
 
@@ -350,8 +369,21 @@
         border-radius: 5px;
     }
 
-    /* configs register */
+    .login form input[type=password] {
+        width: 50%
+    }
 
+    .boton {
+        color: white;
+        background-color: #1259c3;
+        transition: background-color 0.4s;
+    }
+
+    .boton:hover {
+        background-color: #0022AA;
+    }
+
+    /* configs register */
     .selector {
         display: flex;
         width: 90%;
@@ -362,7 +394,7 @@
     }
 
     .selector input {
-            margin-left: 20%;
+        margin-left: 20%;
 
     }
 
@@ -386,13 +418,10 @@
         margin-left: 23%;
     }
 
-
     .botones-div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center
+        padding-top: 10px;
     }
+
 
     .botones-div input {
         border: none;
