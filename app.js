@@ -24,5 +24,5 @@ app.get ('/register',(req,res) => {
 
 
 app.listen(process.env.PORT, () => 
-console.log('Servidor ' + process.env.PORT +'http://localhost:3001'  )
+console.log('Servidor ' + process.env.PORT +'http://localhost:3030'  )
 );
