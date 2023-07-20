@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-// const dotenv = require('dotenv').config();
+const dotenv = require('dotenv').config();
 
 const app = express();
 app.use(express.static('public'));
@@ -23,10 +23,10 @@ app.get ('/register',(req,res) => {
 
 
 
-// app.listen(process.env.PORT, () => 
-// console.log('Servidor ' + process.env.PORT +'http://localhost:3030'  )
-// );
-
-app.listen(3030, () => 
-console.log('Servidor http://localhost:3030'  )
+app.listen(process.env.PORT, () => 
+console.log('Servidor ' + process.env.PORT +'http://localhost:3030'  )
 );
+
+// app.listen(3030, () => 
+// console.log('Servidor http://localhost:3030'  )
+// );
