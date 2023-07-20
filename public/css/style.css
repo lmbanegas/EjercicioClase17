@@ -12,6 +12,11 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
     }
 
     img {
@@ -405,8 +410,7 @@
     }
 
     .intereses {
-        display: flex;
-        align-items: center;
+
         margin-bottom: 10px;
     }
 

@@ -71,107 +71,116 @@
 
     </header>
     <main class="login-register-page">
-
-
-
         <div class="login">
             <form action="/register" method="POST">
-                <input type="text" name="nya" id="nya" placeholder="Nombre y apellido" required minlength="1" maxlength="30" >
-                <input type="text" name="nombreusuario" id="nombreusario" placeholder="Nombre de usuario" required maxlength="10">
+                <input type="text" name="nya" id="nya" placeholder="Nombre y apellido" required minlength="1" maxlength="30">
+                <input type="text" name="nombreusuario" id="nombreusuario" placeholder="Nombre de usuario" required maxlength="10">
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
-
                 <label for="fechaDeNacimiento"> <b>Fecha de nacimiento</b> </label>
-
-                <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" placeholder="Fecha de nacimiento" max="2005-07-13">
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" placeholder="Fecha de nacimiento" max="2005-07-13" required>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                
+                <div class="titulo-register">
+                    <b>Perfil de usuario</b>
+                </div>
+    
+                <div class="selector">
+                    <label for="perfilDeUsuario"></label>
+                    <input type="radio" name="grupo" value="Comprador" required> Comprador
+                    <input type="radio" name="grupo" value="Vendedor" required> Vendedor
+                </div>
+    
+                <div class="titulo-register">
+                    <b>Intereses</b>
+                </div>
+    
+                <div class="contenedor-intereses">
+                    <div class="intereses">
+                        <input type="checkbox" id="electro" name="intereses" value="electro" required>
+                        <label for="electro">Electro</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="moda" name="intereses" value="moda" required>
+                        <label for="moda">Moda</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="hogar" name="intereses" value="hogar" required>
+                        <label for="hogar">Hogar</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="jugueteria" name="intereses" value="jugueteria" required>
+                        <label for="jugueteria">Juguetería</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="vida_sana" name="intereses" value="vida_sana" required>
+                        <label for="vida_sana">Vida sana</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="deportes" name="intereses" value="deportes" required>
+                        <label for="deportes">Deportes</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia" required>
+                        <label for="tecnologia">Tecnología</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="musica" name="intereses" value="musica" required>
+                        <label for="musica">Música</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="cine" name="intereses" value="cine" required>
+                        <label for="cine">Cine</label>
+                    </div>
+    
+                    <div class="intereses">
+                        <input type="checkbox" id="arte" name="intereses" value="arte" required>
+                        <label for="arte">Arte</label>
+                    </div>
+                </div>
+    
+                <div class="titulo-register">
+                    <b>Foto de usuario</b>
+                </div>
+    
+                <div class="contenedor-intereses">
+                    <input type="file" name="foto_usuario" required>
+                </div>
+    
+                <div class="titulo-register">
+                    <b>Contraseña</b>
+                </div>
+    
+                <div class="login">
+                    <input type="password" name="password" id="password" required>
+                </div>
+    
+                <div class="titulo-register">
+                    <b>Confirmar contraseña</b>
+                </div>
+    
+                <div class="login">
+                    <input type="password" name="confirmar_password" id="confirmar_password" required>
+                </div>
+    
+                <div class="contenedor-intereses">
+                    <div class="botones-div">
+                        <a href="/"><input type="submit" value="Enviar"></a>
+                        <a href=""><input type="reset" value="Borrar"></a>
+                    </div>
+                </div>
+    
             </form>
-
         </div>
-
-        <div class="titulo-register">
-            <b>Perfil de usuario</b>
-        </div>
-
-        <div class="selector">
-            <label for="perfilDeUsuario"></label>
-            <input type="radio" name="grupo" value="Comprador"> Comprador
-            <input type="radio" name="grupo" value="Vendedor"> Vendedor
-        </div>
-
-        <div class="titulo-register">
-            <b>Intereses</b>
-        </div>
-
-        <div class="contenedor-intereses">
-            <form>
-                <div class="intereses">
-                    <input type="checkbox" id="electro" name="intereses" value="electro">
-                    <label for="electro">Electro</label>
-                </div>
-
-                <div class="intereses">
-                    <input type="checkbox" id="moda" name="intereses" value="moda">
-                    <label for="moda">Moda</label>
-                </div>
-
-                <div class="intereses">
-                    <input type="checkbox" id="hogar" name="intereses" value="hogar">
-                    <label for="hogar">Hogar</label>
-                </div>
-
-                <div class="intereses">
-                    <input type="checkbox" id="jugueteria" name="intereses" value="jugueteria">
-                    <label for="jugueteria">Juguetería</label>
-                </div>
-
-                <div class="intereses">
-                    <input type="checkbox" id="vida_sana" name="intereses" value="vida_sana">
-                    <label for="vida_sana">Vida sana</label>
-                </div>
-            </form>
-        </div>
-
-        <div class="titulo-register">
-            <br>
-            <b>Foto de usuario</b>
-        </div>
-
-        <div class="contenedor-intereses">
-            <form action="" method="post">
-                  <input type="file" name="">
-              </form>
-        </div>
-
-        <br>
-        <b class="titulo-register">Contraseña</b>
-
-        <div class="login">
-        <form>
-            <div>
-                <input type="password" name="password" id="password">
-            </div>
-        </form>
-        </div>
-
-        <b class="titulo-register">Confirmar contraseña</b>
-
-        <div class="login">
-            <form>
-                <div>
-                    <input type="password" name="password" id="password">
-                </div>
-            </form>
-        </div>
-
-        <div class="contenedor-intereses">
-
-            <div class="botones-div">
-                <a href="/"><input type="submit" value="Enviar"></a>
-                <a href=""><input type="reset" value="Borrar"></a>
-            </div>
-        </div>
-
-
+    </main>
+    
 
 
     </main>
